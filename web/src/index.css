@@ -1,0 +1,40 @@
+:root {
+  --board-bg: #12151c;
+  --panel-bg: #1a1e27;
+  --panel-border: #262b38;
+  --text-primary: #edeef0;
+  --text-muted: #8b93a3;
+  --amber: #f2a93b;
+  --amber-dim: #7a5f28;
+  --deal-green: #5fbe8a;
+  --error-red: #d9736b;
+  --font-display: "JetBrains Mono", "SF Mono", monospace;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--board-bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
